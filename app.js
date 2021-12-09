@@ -15,12 +15,20 @@ function checkBirthdayIsLucky() {
     var dob = dateOfBirth.value;
     var sum = calculateSum(dob);
     
+    if(luckyNumber.value<0)
+    {
+        outputBox.innerText ="please enter positive value😠"
+    }
+    else
+    {
+    
     if (sum && dob) {
         compareValues(sum, luckyNumber.value)
     } else {
         outputBox.innerText = "Please enter both the fields🥴";
     }
 
+}
 }
 
 function calculateSum(dob) {
@@ -34,4 +42,5 @@ function calculateSum(dob) {
 
 
 
-checkButton.addEventListener("click", checkBirthdayIsLucky);
+
+checkButton.addEventListener("click", checkBirthdayIsLucky)
