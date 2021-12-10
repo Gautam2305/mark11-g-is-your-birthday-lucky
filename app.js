@@ -15,7 +15,7 @@ function checkBirthdayIsLucky() {
     var dob = dateOfBirth.value;
     var sum = calculateSum(dob);
     
-    if(luckyNumber.value<0)
+    if(luckyNumber.value<=0)
     {
         outputBox.innerText ="please enter positive value😠"
     }
